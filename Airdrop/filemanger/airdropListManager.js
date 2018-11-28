@@ -46,7 +46,7 @@ function getAirdrop(filepath,addressIndex,amountIndex,needJudgeRepeat,result) {
             break;
         }
 
-        //repeat token Address
+        //重复令牌地址
         if(repeatAirdropAddressIndexs.indexOf(i) !== -1){
 
             let arr = listData[i];

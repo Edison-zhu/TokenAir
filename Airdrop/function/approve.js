@@ -1,5 +1,5 @@
 /**
- * Created by zhaoyiyu on 2018/1/29.
+ * Created by zhuyanbing on 2018/11/29.
  */
 
 const Config = require('./../config/config.js');
@@ -14,9 +14,9 @@ const fs = require('fs');
 const solc = require('solc');
 
 // compile the code
-const input = fs.readFileSync('./../contract/erc20Token.sol');
+const input = fs.readFileSync('./../contract/JDCoin.sol');
 const output = solc.compile(input.toString());
-const abi = JSON.parse(output.contracts[':TokenERC20'].interface);
+const abi = JSON.parse(output.contracts[':JDToken'].interface);
 
 //------------------------------ init property ----------------------------
 

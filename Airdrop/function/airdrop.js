@@ -1,5 +1,5 @@
 /**
- * Created by zhaoyiyu on 2018/1/17.
+ * Created by zhuyanbnig on 2018/11/17.
  */
 
 const Config = require('./../config/config.js');
@@ -14,14 +14,14 @@ const fs = require('fs');
 const solc = require('solc');
 
 // compile the code
-const input = fs.readFileSync('./contract/airdrop.sol');
+const input = fs.readFileSync('../contract/airdrop.sol');
 const output = solc.compile(input.toString());
 const abi = JSON.parse(output.contracts[':TokenAirDrop'].interface);
 
 
-const tokenInput = fs.readFileSync('./contract/erc20Token.sol');
+const tokenInput = fs.readFileSync('../contract/JDCoin.sol');
 const tokenOutput = solc.compile(tokenInput.toString());
-const tokenAbi = JSON.parse(tokenOutput.contracts[':TokenERC20'].interface);
+const tokenAbi = JSON.parse(tokenOutput.contracts[':JDToken'].interface);
 
 
 function privateKeyToAddress(privateKey) {

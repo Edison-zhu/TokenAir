@@ -12,10 +12,10 @@ function createRandomAwardsList(originalListPath,addressIndex,result){
         if (didExists === false){
 
             createRandomAward();
-            console.log('Generated awards list has been generated！');
+            console.log('已经生成奖励列表！');
         }
 
-        console.log('did create awards list , if you want to create a new awards list ,please delete the old one');
+        console.log('确实创建奖项列表，如果你想创建一个新的奖项列表，请删除旧的奖项');
     });
 }
 

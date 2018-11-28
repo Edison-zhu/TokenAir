@@ -1,5 +1,5 @@
 /**
- * Created by zhaoyiyu on 2018/3/22.
+ * Created by zhuyanbing on 2018/11/22.
  */
 
 const sd = require('silly-datetime');
@@ -8,7 +8,7 @@ let ws ;
 const Config = require('../../config/config.js');
 
 Web3 = require('web3');
-const web3 = new Web3(new Web3.providers.HttpProvider(Config.transaction.url));
+const web3 = new Web3(new Web3.providers.HttpProvider("https://ropsten.infura.io/v3/9d3389b641bb4385a0a1e6daedb963c2"));
 
 //airdrop contract address
 const airContractAddress = Config.airdropModule.airdropContractAddress;
@@ -73,7 +73,7 @@ function startRinkebyListen(tokenAbi,tokenAddress,fromAddress) {
             });
         });
 
-    },1000 * 2);
+    },1000 * 5);
 }
 
 

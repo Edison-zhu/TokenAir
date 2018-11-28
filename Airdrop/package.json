@@ -5,7 +5,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "",
+  "author": "zhuyanbing",
   "license": "ISC",
   "dependencies": {
     "ethereumjs-tx": "^1.3.3",
@@ -13,8 +13,9 @@
     "node-schedule": "^1.3.0",
     "node-xlsx": "^0.11.2",
     "silly-datetime": "^0.1.2",
-    "solc": "^0.4.20",
-    "web3": "^1.0.0-beta.30"
+    "solc": "^0.4.24",
+    "solc-cli": "^0.3.0",
+    "web3": "^1.0.0-beta.36"
   },
   "description": ""
 }

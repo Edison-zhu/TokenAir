@@ -1,12 +1,12 @@
 /**
- * Created by zhaoyiyu on 2018/1/30.
+ * Created by zhuyanbing on 2018/11/30.
  */
 const fs = require('fs');
 const solc = require('solc');
 
 const Config = require('../../config/config');
 Web3 = require('web3');
-const web3 = new Web3(new Web3.providers.HttpProvider(Config.transaction.url));
+const web3 = new Web3(new Web3.providers.HttpProvider('https://ropsten.infura.io/v3/9d3389b641bb4385a0a1e6daedb963c2'));
 
 const transaction = require('./transaction');
 
