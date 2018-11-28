@@ -16,7 +16,7 @@ const solc = require('solc');
 // compile the code
 const tokenInput = fs.readFileSync('./../contract/JDCoin.sol');
 const tokenOutput = solc.compile(tokenInput.toString());
-const tokenAbi = JSON.parse(tokenOutput.contracts[':TokenERC20'].interface);
+const tokenAbi = JSON.parse(tokenOutput.contracts[':SHPtoken'].interface);
 
 
 //-------------------------------- api --------------------------------
@@ -38,13 +38,13 @@ function startTransferToken() {
     let tokenAddress = 'your token address';
 
     transferToken(tokenAddress,'your destination address',obj,function (hashId) {
-        console.log('start transfer Token!,hashId->',hashId);
+        console.log('开始交易 代币!,hashId->',hashId);
     },function (success) {
 
-        console.log('transferToken success!');
+        console.log('交易成功!');
     },function (error) {
 
-        console.log('transferToken falid!');
+        console.log('交易失败!');
     });
 }
 

@@ -19,9 +19,9 @@ const output = solc.compile(input.toString());
 const abi = JSON.parse(output.contracts[':TokenAirDrop'].interface);
 
 
-const tokenInput = fs.readFileSync('../contract/JDCoin.sol');
+const tokenInput = fs.readFileSync('../contract/SHPcoin.sol');
 const tokenOutput = solc.compile(tokenInput.toString());
-const tokenAbi = JSON.parse(tokenOutput.contracts[':JDToken'].interface);
+const tokenAbi = JSON.parse(tokenOutput.contracts[':SHPToken'].interface);
 
 
 function privateKeyToAddress(privateKey) {

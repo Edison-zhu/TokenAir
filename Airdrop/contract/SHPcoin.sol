@@ -2,7 +2,7 @@ pragma solidity ^0.4.24;
 
 interface tokenRecipient { function receiveApproval(address _from, uint256 _value, address _token, bytes _extraData) public; }
 
-contract JDToken {
+contract SHPToken {
     // Public variables of the token
     string public name = "yanbingCoin";
     string public symbol = "ZYB";

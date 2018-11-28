@@ -14,9 +14,9 @@ const fs = require('fs');
 const solc = require('solc');
 
 // compile the code
-const input = fs.readFileSync('./../contract/JDCoin.sol');
+const input = fs.readFileSync('./../contract/SHPcoin.sol');
 const output = solc.compile(input.toString());
-const abi = JSON.parse(output.contracts[':JDToken'].interface);
+const abi = JSON.parse(output.contracts[':SHPToken'].interface);
 
 //------------------------------ init property ----------------------------
 
